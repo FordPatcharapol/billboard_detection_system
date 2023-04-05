@@ -27,10 +27,10 @@ This repository provides a detail overview of the design and installation of bil
 
 # Technologies Used
  - Data Science: Python, NumPy, pandas, OpenCV
- - Machine Learning: TensorFlow, Keras, YOLOv5
+ - Machine Learning: YOLO
  - Cloud Computing: AWS, Google Cloud Platform
  - Edge Computing: NVIDIA Jetson, Raspberry Pi
- - Protocol Buffers: Google's Protocol Buffers
+ - Data Format: Protobuf / JSON
 
 
 # Optimizations for Edge and Cloud Computing
