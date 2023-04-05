@@ -27,6 +27,7 @@ This repository provides a detail overview of the design and installation of bil
 
 # Technologies Used
  - Data Science: Python, NumPy, pandas, OpenCV
+ - label Tools: Roboflow / LabelImg / CVAT
  - Machine Learning: YOLO
  - Cloud Computing: AWS, Google Cloud Platform
  - Edge Computing: NVIDIA Jetson, Raspberry Pi
