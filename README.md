@@ -4,12 +4,11 @@ Table of Contents
 1. Introduction
 2. Main Components of The System
 3. Technologies Used
-4. Machine Learning Model
-5. Optimizations for Edge and Cloud Computing
-6. Integration with Protocol Buffers / JSON
-7. Deployment
-8. Summary
-9. Reference
+4. Optimizations for Edge and Cloud Computing
+5. Integration with Protocol Buffers / JSON
+6. Deployment
+7. Summary
+8. Reference
 
 # Introduction
 This repository provides a detail overview of the design and installation of billboard detection systems across Thailand, utilizing cutting-edge technologies in Data Science, Machine Learning, Cloud Computing, and Edge Computing to deliver optimal performance in terms of speed and resource efficiency. Additionally, the system incorporates buffer and JSON protocols to facilitate efficient data communication.
@@ -25,3 +24,28 @@ This repository provides a detail overview of the design and installation of bil
   After we have prepared the data, before we can use the data to train the model, it is necessary to divide the data we have into 3 sets: training, validation, and testing sets. The training sets will be used to train your model. Validation sets are used to evaluate the performance of your model during training. and a series of tests will be used to evaluate the final performance of your model.
  
 - Edge and Cloud Computing
+
+# Technologies Used
+ - Data Science: Python, NumPy, pandas, OpenCV
+ - Machine Learning: TensorFlow, Keras, YOLOv5
+ - Cloud Computing: AWS, Google Cloud Platform
+ - Edge Computing: NVIDIA Jetson, Raspberry Pi
+ - Protocol Buffers: Google's Protocol Buffers
+
+
+# Optimizations for Edge and Cloud Computing
+
+
+# Integration with Protocol Buffers / JSON
+
+
+# Deployment
+
+
+# Summary
+
+
+# Reference
+
+
+
