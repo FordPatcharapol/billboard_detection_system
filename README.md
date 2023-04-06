@@ -101,12 +101,13 @@ For example, microservices can be modeled as distributed processing so that when
 # Technologies Used
  - Data Science: Python, NumPy, pandas, OpenCV, Pytorch
  - label Tools: Roboflow / LabelImg / CVAT
- - Machine Learning: YOLO
+ - Machine Learning: YOLO, TensorRT
  - Cloud Computing: AWS / Google Cloud Platform
  - Edge Computing: NVIDIA Jetson/ Raspberry Pi
  - Data Format: Protobuf / JSON
  - Container: Docker / Kubernetes
  - Resource: Nvdia Cuda
+ - Architecture: Microservice
 
 # Deployment
   In terms of deployment, it will create containers that contain programs and models that you want to use in order to easily manage and maintain each service, with Kubernetes that will help manage containers to be able to deploy, manage resources. automatically This can also help keep applications running on containers running smoothly.
