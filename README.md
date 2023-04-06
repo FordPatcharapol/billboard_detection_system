@@ -39,6 +39,9 @@ This repository provides a detail overview of the design and installation of bil
       - Increased Complexity of Overall System
       - Limited Resources
 
+![image](https://user-images.githubusercontent.com/106796461/230255456-a82e6e01-df9c-4b5f-b146-d7c1401e8feb.png)
+
+
   - **Cloud Computing** - Cloud computing refers to the service of computing services, including servers, storage, databases, networking, software, analytics, and artificial intelligence, over the internet. It allows users to access and utilize these resources on a pay-as-you-go basis without having to invest in and manage physical infrastructure like data centers and servers. Cloud computing enables users to scale their infrastructure up or down based on their needs, providing flexibility and cost efficiency. This is particularly useful for businesses and organizations that experience fluctuating workloads or require rapid deployment of new applications.
    
       **Advantages** 
@@ -53,6 +56,14 @@ This repository provides a detail overview of the design and installation of bil
       - Dependency on Internet Connectivity
       - Limited Control and Customization
 
+![image](https://user-images.githubusercontent.com/106796461/230255809-eca6a20e-4bfb-402c-a98b-d7f8e67d4336.png)
+
+
+# Optimizations for Edge Computing and Cloud Computing
+
+
+# Integration with Protocol Buffers / JSON
+
 # Technologies Used
  - Data Science: Python, NumPy, pandas, OpenCV
  - label Tools: Roboflow / LabelImg / CVAT
@@ -60,12 +71,6 @@ This repository provides a detail overview of the design and installation of bil
  - Cloud Computing: AWS, Google Cloud Platform
  - Edge Computing: NVIDIA Jetson, Raspberry Pi
  - Data Format: Protobuf / JSON
-
-
-# Optimizations for Edge Computing and Cloud Computing
-
-
-# Integration with Protocol Buffers / JSON
 
 
 # Deployment
@@ -77,5 +82,5 @@ This repository provides a detail overview of the design and installation of bil
 # Reference
 - Ahmad I., Bakht H., Mohan U., (2017). Cloud Computing - A Comprehensive Definiton. Journal of Computing and Management Studies Vol. 1.
 - https://netway.co.th/kb/blog/cloud-managed-services/cloud-computing-คืออะไร
-- 
+- https://innovationatwork.ieee.org/real-life-edge-computing-use-cases/
 
