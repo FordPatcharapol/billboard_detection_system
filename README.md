@@ -71,10 +71,23 @@ This repository provides a detail overview of the design and installation of bil
   * From the congestion limitation of this communication channel, I have brought edge computing to help reduce bandwidth usage by introducing Microservices. that uses data from the camera to be in the same area as the camera Makes processing unnecessary to send some data to the cloud. This helps reduce congestion in the communication channel. and use the information as necessary In terms of doing edge computing, there are still limitations like in the part where resources are quite limited, causing the need to improve the software or model to be able to support work on edge computing and we can design work as Microservices on edge computing to increase efficiency
 
 <div align="center">
-  <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/edge_computing.PNG"/>
+  <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/edge_computing_c.PNG"/>
 </div>
 
 # Integration with Protocol Buffers / JSON
+  To exchange data between services or microservices, a data format that can be accessed and retrieved is essential. In this context, common data formats such as JSON are often employed due to their widespread support across various applications, browser compatibility, and ease of use with AJAX. JSON doesn't require prior knowledge of the data structure to access the data, making it highly convenient for developers.
+  
+<div align="center">
+  <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/edge_computing_json.PNG"/>
+</div>
+
+However, an alternative data format known as Protocol Buffers (Protobuf) can potentially enhance overall system performance. The primary advantage of Protobuf is its compact file size, resulting from data being encoded in a binary format. This compactness enables faster processing speeds. The main drawback of Protobuf, however, is that it complicates development, as it necessitates a predefined data structure to process the data.
+
+<div align="center">
+  <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/edge_computing_json_proto.PNG"/>
+</div>
+
+Ultimately, the choice of data format depends on the specific requirements of each component within a system, rather than any universally applicable criteria.
 
 # Technologies Used
  - Data Science: Python, NumPy, pandas, OpenCV, Pytorch
