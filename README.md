@@ -87,6 +87,9 @@ However, an alternative data format known as Protocol Buffers (Protobuf) can pot
   <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/edge_computing_json_proto.PNG"/>
 </div>
 
+Ultimately, the choice of data format depends on the specific requirements of each component within a system, rather than any universally applicable criteria.
+
+# Integration with Distributed System
 The previous example is a data center processing example that combines all processing in one place. In this section, we can prevent the server from crashing and may not be able to use. application By solving problems in this section, we can adjust the form of the system structure to be in the form distributed processing It's a way for multiple computers to work together to solve common problems. This way the computer network becomes a single, powerful computer that provides massive resources to handle complex processing and prevent server crashes so that services can continue to be used.
 
 For example, microservices can be modeled as distributed processing so that when one service dies, others can continue to run. Or we can add service to do the same job. to support increasing or decreasing service in processing, resulting in higher flexibility of the system
@@ -94,8 +97,6 @@ For example, microservices can be modeled as distributed processing so that when
 <div align="center">
   <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/edge-computing-distributed-system.PNG"/>
 </div>
-
-Ultimately, the choice of data format depends on the specific requirements of each component within a system, rather than any universally applicable criteria.
 
 # Technologies Used
  - Data Science: Python, NumPy, pandas, OpenCV, Pytorch
@@ -112,6 +113,9 @@ Ultimately, the choice of data format depends on the specific requirements of ea
 
 # Reference
 - Ahmad I., Bakht H., Mohan U., (2017). Cloud Computing - A Comprehensive Definiton. Journal of Computing and Management Studies Vol. 1.
+- 
 - https://netway.co.th/kb/blog/cloud-managed-services/cloud-computing-คืออะไร
 - https://innovationatwork.ieee.org/real-life-edge-computing-use-cases/
+- https://aws.amazon.com/th/what-is/distributed-computing/
+- https://www.howtoautomate.in.th/protobuf-101/
 
