@@ -13,6 +13,10 @@ Table of Contents
 # Introduction
 This repository provides a detail overview of the design and installation of billboard detection systems across Thailand, utilizing cutting-edge technologies in Data Science, Machine Learning, Cloud Computing, and Edge Computing to deliver optimal performance in terms of speed and resource efficiency. Additionally, the system incorporates buffer and JSON protocols to facilitate efficient data communication.
 
+<div align="center">
+  <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/billboard_detection.PNG"/>
+</div>
+
 # Main Components of The System
 - Data Collection and Preprocessing
   
