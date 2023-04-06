@@ -60,7 +60,7 @@ This repository provides a detail overview of the design and installation of bil
 
 
 # Optimizations for Edge Computing and Cloud Computing
-  * in designing the system to be effective The system must be managed well concurrently. But ultimately it depends on individual needs and design. In this section, I would like to present a system performance improvement for both Cloud Computing and Edge Computing models by adopting a container-based computing approach. made to be used in processors in the architecture Microservices and proper data management for forwarding data in different formats
+  * in designing the system to be effective The system must be managed well concurrently. But ultimately it depends on individual needs and design. In this section, I would like to present a system performance improvement for both Cloud Computing and Edge Computing models by adopting a container-based computing approach. made to be used in processors in the architecture Microservices  and proper data management for forwarding data in different formats.Microservice is the development of a software system that divides the functionality of an application into smaller units. and can work independently of each other Microservices often represent specific functions or capabilities that can be developed, tested, and extended independently from the rest of the application.
 
   * By designing a cloud computing system, it has advantages and disadvantages as mentioned earlier. In this design, I have designed all processing, data linking, and storage on the cloud, making operation and maintenance easy. Since most of the systems are located in the same place, there must be a shared resource sharing. Therefore, proper management is required. which I have brought to work Microservices Come to help in dividing the work separately and using the bus as an intermediary to link the used data. which in this part allows us to make our system flexible and able to adjust, increase or decrease to suit the applications we use but even though the work has been divided appropriately Managing the communication channel is also important. because we have With the rise of microservices, congestion in communication channels is a concern.
 
@@ -68,7 +68,7 @@ This repository provides a detail overview of the design and installation of bil
   <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/cloud_computing_c.PNG"/>
 </div>
   
-  * From the congestion limitation of this communication channel, I have brought edge computing to help reduce bandwidth usage by introducing Microservices. that uses data from the camera to be in the same area as the camera Makes processing unnecessary to send some data to the cloud. This helps reduce congestion in the communication channel. and use the information as necessary In terms of doing edge computing, there are still limitations like in the part where resources are quite limited, causing the need to improve the software or model to be able to support work on edge computing and we can design work as Microservices on edge computing to increase efficiency
+  * From the congestion limitation of this communication channel, I have brought edge computing to help reduce bandwidth usage by introducing Microservices. that uses data from the camera to be in the same area as the camera Makes processing unnecessary to send some data to the cloud. This helps reduce congestion in the communication channel. and use the information as necessary In terms of doing edge computing, there are still limitations like in the part where resources are quite limited, causing the need to improve the software or model to be able to support work on edge computing and we can design work as Microservices on edge computing to increase efficiency.
 
 <div align="center">
   <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/edge_computing_c.PNG"/>
@@ -110,6 +110,9 @@ For example, microservices can be modeled as distributed processing so that when
 
 # Deployment
   In terms of deployment, it will create containers that contain programs and models that you want to use in order to easily manage and maintain each service, with Kubernetes that will help manage containers to be able to deploy, manage resources. automatically This can also help keep applications running on containers running smoothly.
+  
+# Summary
+In this example is present about the system design and does not go into detail in the software development part. microservices, resources Or others as appropriate for the service, making the overall system highly flexible. However, the design of various systems depends mainly on the use. This system I designed based on my personal opinion only.
 
 # Reference
 - Ahmad I., Bakht H., Mohan U., (2017). Cloud Computing - A Comprehensive Definiton. Journal of Computing and Management Studies Vol. 1.
