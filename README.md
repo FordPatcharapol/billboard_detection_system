@@ -81,10 +81,18 @@ This repository provides a detail overview of the design and installation of bil
   <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/edge_computing_json.PNG"/>
 </div>
 
-However, an alternative data format known as Protocol Buffers (Protobuf) can potentially enhance overall system performance. The primary advantage of Protobuf is its compact file size, resulting from data being encoded in a binary format. This compactness enables faster processing speeds. The main drawback of Protobuf, however, is that it complicates development, as it necessitates a predefined data structure to process the data.
+However, an alternative data format known as Protocol Buffers (Protobuf) can potentially enhance overall system performance. The primary advantage of Protobuf is its compact file size, resulting from data being encoded in a binary format. This compactness enables faster processing speeds. The main drawback of Protobuf, however, is that it complicates development, as it necessitates a predefined data structure to process the data. But this data format is suitable for increasing the speed of data transmission in a distributed system where the speed of data transmission is quite effective.
 
 <div align="center">
   <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/edge_computing_json_proto.PNG"/>
+</div>
+
+The previous example is a data center processing example that combines all processing in one place. In this section, we can prevent the server from crashing and may not be able to use. application By solving problems in this section, we can adjust the form of the system structure to be in the form distributed processing It's a way for multiple computers to work together to solve common problems. This way the computer network becomes a single, powerful computer that provides massive resources to handle complex processing and prevent server crashes so that services can continue to be used.
+
+For example, microservices can be modeled as distributed processing so that when one service dies, others can continue to run. Or we can add service to do the same job. to support increasing or decreasing service in processing, resulting in higher flexibility of the system
+
+<div align="center">
+  <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/edge-computing-distributed-system.PNG"/>
 </div>
 
 Ultimately, the choice of data format depends on the specific requirements of each component within a system, rather than any universally applicable criteria.
@@ -97,6 +105,7 @@ Ultimately, the choice of data format depends on the specific requirements of ea
  - Edge Computing: NVIDIA Jetson/ Raspberry Pi
  - Data Format: Protobuf / JSON
  - Container: Docker / Kubernetes
+ - Resource: Nvdia Cuda
 
 # Deployment
   In terms of deployment, it will create containers that contain programs and models that you want to use in order to easily manage and maintain each service, with Kubernetes that will help manage containers to be able to deploy, manage resources. automatically This can also help keep applications running on containers running smoothly.
