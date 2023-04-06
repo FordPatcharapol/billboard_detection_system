@@ -13,8 +13,6 @@ Table of Contents
 # Introduction
 This repository provides a detail overview of the design and installation of billboard detection systems across Thailand, utilizing cutting-edge technologies in Data Science, Machine Learning, Cloud Computing, and Edge Computing to deliver optimal performance in terms of speed and resource efficiency. Additionally, the system incorporates buffer and JSON protocols to facilitate efficient data communication.
 
-![image](https://user-images.githubusercontent.com/106796461/229883664-2e9b2386-b558-4a5f-ad83-13160d57274e.png)
-
 # Main Components of The System
 - Data Collection and Preprocessing
   
@@ -23,7 +21,9 @@ This repository provides a detail overview of the design and installation of bil
 - Machine Learning Model
   After we have prepared the data, before we can use the data to train the model, it is necessary to divide the data we have into 3 sets: training, validation, and testing sets. The training sets will be used to train your model. Validation sets are used to evaluate the performance of your model during training. and a series of tests will be used to evaluate the final performance of your model.
    
-  ![image](https://user-images.githubusercontent.com/106796461/230230410-b405694b-a450-47d1-83f8-f807d32e2997.png)
+<div align="center">
+  <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/split_data.PNG"/>
+</div>
  
 - Edge Computing and Cloud Computing
    - **Edge Computing** - Edge computing refers to processing data closer to its source, such as sensors, cameras or smart devices, rather than sending it to central processing or cloud servers alone. The main goal of edge computing is to reduce the latency and bandwidth required for processing data to central or cloud servers by processing data close to the source for real-time performance.
@@ -38,8 +38,6 @@ This repository provides a detail overview of the design and installation of bil
       - High Cost
       - Increased Complexity of Overall System
       - Limited Resources
-
-![image](https://user-images.githubusercontent.com/106796461/230255456-a82e6e01-df9c-4b5f-b146-d7c1401e8feb.png)
 
 
   - **Cloud Computing** - Cloud computing refers to the service of computing services, including servers, storage, databases, networking, software, analytics, and artificial intelligence, over the internet. It allows users to access and utilize these resources on a pay-as-you-go basis without having to invest in and manage physical infrastructure like data centers and servers. Cloud computing enables users to scale their infrastructure up or down based on their needs, providing flexibility and cost efficiency. This is particularly useful for businesses and organizations that experience fluctuating workloads or require rapid deployment of new applications.
@@ -56,27 +54,34 @@ This repository provides a detail overview of the design and installation of bil
       - Dependency on Internet Connectivity
       - Limited Control and Customization
 
-![image](https://user-images.githubusercontent.com/106796461/230255809-eca6a20e-4bfb-402c-a98b-d7f8e67d4336.png)
-
 
 # Optimizations for Edge Computing and Cloud Computing
+  * in designing the system to be effective The system must be managed well concurrently. But ultimately it depends on individual needs and design. In this section, I would like to present a system performance improvement for both Cloud Computing and Edge Computing models by adopting a container-based computing approach. made to be used in processors in the architecture Microservices and proper data management for forwarding data in different formats
 
+  * By designing a cloud computing system, it has advantages and disadvantages as mentioned earlier. In this design, I have designed all processing, data linking, and storage on the cloud, making operation and maintenance easy. Since most of the systems are located in the same place, there must be a shared resource sharing. Therefore, proper management is required. which I have brought to work Microservices Come to help in dividing the work separately and using the bus as an intermediary to link the used data. which in this part allows us to make our system flexible and able to adjust, increase or decrease to suit the applications we use but even though the work has been divided appropriately Managing the communication channel is also important. because we have With the rise of microservices, congestion in communication channels is a concern.
+
+<div align="center">
+  <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/cloud_computing_c.PNG"/>
+</div>
+  
+  * From the congestion limitation of this communication channel, I have brought edge computing to help reduce bandwidth usage by introducing Microservices. that uses data from the camera to be in the same area as the camera Makes processing unnecessary to send some data to the cloud. This helps reduce congestion in the communication channel. and use the information as necessary In terms of doing edge computing, there are still limitations like in the part where resources are quite limited, causing the need to improve the software or model to be able to support work on edge computing and we can design work as Microservices on edge computing to increase efficiency
+
+<div align="center">
+  <img src="https://github.com/FordPatcharapol/billboard_detection_system/blob/main/imgs/edge_computing.PNG"/>
+</div>
 
 # Integration with Protocol Buffers / JSON
 
 # Technologies Used
- - Data Science: Python, NumPy, pandas, OpenCV
+ - Data Science: Python, NumPy, pandas, OpenCV, Pytorch
  - label Tools: Roboflow / LabelImg / CVAT
  - Machine Learning: YOLO
- - Cloud Computing: AWS, Google Cloud Platform
- - Edge Computing: NVIDIA Jetson, Raspberry Pi
+ - Cloud Computing: AWS / Google Cloud Platform
+ - Edge Computing: NVIDIA Jetson/ Raspberry Pi
  - Data Format: Protobuf / JSON
-
+ - Container: Docker / Kubernetes
 
 # Deployment
-
-
-# Summary
 
 
 # Reference
