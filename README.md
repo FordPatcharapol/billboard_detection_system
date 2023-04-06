@@ -22,8 +22,36 @@ This repository provides a detail overview of the design and installation of bil
   
 - Machine Learning Model
   After we have prepared the data, before we can use the data to train the model, it is necessary to divide the data we have into 3 sets: training, validation, and testing sets. The training sets will be used to train your model. Validation sets are used to evaluate the performance of your model during training. and a series of tests will be used to evaluate the final performance of your model.
+   
+  ![image](https://user-images.githubusercontent.com/106796461/230230410-b405694b-a450-47d1-83f8-f807d32e2997.png)
  
-- Edge and Cloud Computing
+- Edge Computing and Cloud Computing
+   - **Edge Computing** - Edge computing refers to processing data closer to its source, such as sensors, cameras or smart devices, rather than sending it to central processing or cloud servers alone. The main goal of edge computing is to reduce the latency and bandwidth required for processing data to central or cloud servers by processing data close to the source for real-time performance.
+      
+      **Advantages** 
+      - Reduce the Latency and Bandwidth Required.
+      - Processing Data in Real-Time Performance.
+      - Increased System Resilience and Scalability
+      
+      **Disadvantages**
+      - Security Risks
+      - High Cost
+      - Increased Complexity of Overall System
+      - Limited Resources
+
+  - **Cloud Computing** - Cloud computing refers to the service of computing services, including servers, storage, databases, networking, software, analytics, and artificial intelligence, over the internet. It allows users to access and utilize these resources on a pay-as-you-go basis without having to invest in and manage physical infrastructure like data centers and servers. Cloud computing enables users to scale their infrastructure up or down based on their needs, providing flexibility and cost efficiency. This is particularly useful for businesses and organizations that experience fluctuating workloads or require rapid deployment of new applications.
+   
+      **Advantages** 
+      - Cost Savings
+      - Scalability and Flexibility
+      - High Security
+      - Easy to Updates and Maintenance
+      
+      **Disadvantages**
+      - Hidden Costs / Data Transfer Costs
+      - Security and Privacy Concerns
+      - Dependency on Internet Connectivity
+      - Limited Control and Customization
 
 # Technologies Used
  - Data Science: Python, NumPy, pandas, OpenCV
@@ -34,7 +62,7 @@ This repository provides a detail overview of the design and installation of bil
  - Data Format: Protobuf / JSON
 
 
-# Optimizations for Edge and Cloud Computing
+# Optimizations for Edge Computing and Cloud Computing
 
 
 # Integration with Protocol Buffers / JSON
@@ -47,6 +75,7 @@ This repository provides a detail overview of the design and installation of bil
 
 
 # Reference
-
-
+- Ahmad I., Bakht H., Mohan U., (2017). Cloud Computing - A Comprehensive Definiton. Journal of Computing and Management Studies Vol. 1.
+- https://netway.co.th/kb/blog/cloud-managed-services/cloud-computing-คืออะไร
+- 
 
