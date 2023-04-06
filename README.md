@@ -117,7 +117,7 @@ In this example is present about the system design and does not go into detail i
 
 # Reference
 - Ahmad I., Bakht H., Mohan U., (2017). Cloud Computing - A Comprehensive Definiton. Journal of Computing and Management Studies Vol. 1.
-- 
+- Xiang C., Jie-Bin X., Wei-Qiang., (2013). The research about video surveillance platform based on cloud computing, 2013 International Conference on Machine Learning and Cybernetics, doi: 10.1109/ICMLC.2013.6890424
 - https://netway.co.th/kb/blog/cloud-managed-services/cloud-computing-คืออะไร
 - https://innovationatwork.ieee.org/real-life-edge-computing-use-cases/
 - https://aws.amazon.com/th/what-is/distributed-computing/
